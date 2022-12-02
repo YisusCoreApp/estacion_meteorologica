@@ -1,0 +1,313 @@
+/*Diseño del navegador del header y Navergador de la página web*/
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Roboto:wght@500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: 0;
+    list-style: none;
+}
+body{
+    max-width: 100%;
+    background-color: #fff;
+}
+a, li{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif ;
+    color: #fff;
+}
+.logo-header img{
+    background: transparent;
+    width: 120px;
+}
+.logo-header2 img{
+    display: flex;
+    align-items: center;
+    width: 75px;
+    height: 50px;
+}
+.logo-header{
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+.logo-header h1{
+    text-align: center;
+    font-family: 'Roboto', sans-serif ;
+    color: #fff;
+    margin-left: 15px;
+    font-size: 23px;
+}
+.logo-header h1:hover{
+    color: #FFC300	;
+}
+header{
+    background-color: #1b396a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.nav-menu ul{
+    display: flex;
+    align-items: center;
+    padding-left: 450px;
+}
+.nav-menu li{
+    justify-items: center;
+    margin-right: 1.5rem;
+}
+.nav-menu a:hover{
+    color: #FFC300	;
+}
+.menu-icon img{
+    width: 30px;
+    height: 30px;
+    border-radius: 2px;
+}
+.menu-icon, #check{
+    display: none;
+}
+/*Estilos del obj y ubi*/
+.contenedor{
+    display: flex;
+    padding: 50px;
+}
+.seccion{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.objetivo{
+    background: #efefef;
+    padding:50px;
+}
+.seccion p{
+    font-size: 20px;
+    padding-top: 30px;
+    text-align: justify;
+}
+.ubicacion{
+    background-color: #efefef;
+    padding: 50px;
+}
+.ubicacion p{
+    font-size: 20px;
+    padding-top: 30px;
+    text-align: justify;
+}
+.ubicacion iframe{
+    width: 65%;
+    height: 380px;
+}
+
+/*Estilos del Aside*/
+.datosAside{
+    margin-left: 80px;
+}
+.datosAside{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+.container {
+    width: 85%;
+    display: block;
+    max-width: 1100px;
+}
+.card{
+    width: 100%;
+    height: 175px;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #efefef;
+    transition: all 400ms ease;
+}
+.card:hover{
+    background: #1b396a;
+    color: #fff;
+    transform: translateY(-3%);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 4);
+}
+.card img{
+    width: 50%;
+    height: 65px;
+    padding-top: 12px;
+}
+.card .contenido{
+    padding: 5px;
+    text-align: center;
+}
+.card .contenido p{
+    font-size: 20px;
+}
+.card .contenido h3{
+    margin-bottom: 10px;
+}
+.datosAside a{
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: #1b396a;
+    border: 3px solid #FFC300;
+    border-radius: 10px;
+    transition: all 400ms ease;
+}
+.datosAside a:hover{
+    background: #FFC300;
+    color: #1b396a;
+    border: 3px solid #1b396a;
+}
+
+
+
+
+/*Estilos del body*/
+/*.seccion{
+    background: #efefef;
+    border: 5px solid #1b396a;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    height: 500px;
+    width: 750px;
+    margin-top: 50px;
+    margin-left: 285px;
+}
+.info p{
+    display: flex;
+    margin-left: 250px;
+    margin-right: 50PX;
+    margin-top: -320px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    text-align: justify;
+}
+.seccion h1{
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+}
+.info img{
+    height: 350px;
+    width: 250px;
+    margin-top: 35px;
+}*/
+/*Estilos del Footer*/
+footer{
+    background: #1b396a;
+    width: 100%;
+    height: 380px;
+    margin-top: 50px;
+    color: #fff;
+}
+.datEsc{
+    padding: 50px 150px;
+}
+.logos{
+    display: flex;
+    justify-content: center;
+}
+.logos img{
+    padding-left: 5px;
+    height: 30px;
+}
+.datEsc li{
+    font-size: 17px;
+    padding: 3px;
+}
+.dat{
+    margin-top: 10px;
+}
+.dat li{
+    font-size: 17px;
+    text-align: center; 
+    padding: 3px;
+}
+/*Estilos para el tamaño de display 760px)*/
+@media (max-width: 768px){
+    header{
+        background-color: #ff69b4;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+    }
+    .logo-header h1{
+        font-family: 'Roboto' , sans-serif;
+        font-size: 28px;
+        padding-left: 6rem;
+    }
+    .checkbtn{
+        display: block;
+    }
+    .menu-icon{
+        display: block;
+        position: fixed;
+        top: 14px;
+        right: 20px;
+        cursor: pointer;
+    }
+    .logo-header img{
+        width: 80px;
+        padding-left: 8px;
+    }
+    .logo-header2 img{
+        display: flex;
+        align-items: center;
+        width: 40px;
+        height: 30px;
+        padding-right: 50px;
+    }
+    .nav-menu ul{
+        display: block;
+        position: fixed;
+        top: 60px;
+        left: -165%;
+        background: #191970;
+        width: 100%;
+        height: 100vh;
+        right: 0;
+    }
+    .nav-menu ul li{
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    #check:checked ~ ul{
+        left: -400px;
+        transition: all .35s;
+
+    }
+
+    /*Estilos del Body*/
+    .seccion{
+        background: #FFC300;
+        border: 5px solid #191970;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        margin-top: 50px;
+        margin-left: 285px;
+    }
+    .info p{
+        display: flex;
+        margin-left: 250px;
+        margin-right: 50PX;
+        margin-top: -320px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        text-align: justify;
+    }
+    .seccion h1{
+        margin-top: 20px;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 50px;
+    }
+    .info img{
+        height: 350px;
+        width: 250px;
+        margin-top: 35px;
+    }
+}
+
