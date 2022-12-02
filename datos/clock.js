@@ -1,7 +1,7 @@
 const time = document.getElementById('time');
 const date = document.getElementById('date');
 
-const monthNames = ["Enero", "Febrero","Marzo","Abril","Mayo","Junio","July","Agosto","Septiembre","Octubre","Noviembre","Deciembre"];
+const monthNames = ["Enero", "Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
 
 
 const interval = setInterval(() => {
