@@ -13,6 +13,6 @@ const interval = setInterval(() => {
         year = local.getFullYear();
 
     time.innerHTML = local.toLocaleTimeString();
-    date.innerHTML = `${day} ${monthNames[month]} ${year}`;
+    date.innerHTML = `${day} ${'de'} ${monthNames[month]} ${'del'} ${year}`;
 
 }, 1000);

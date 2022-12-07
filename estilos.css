@@ -1,5 +1,5 @@
 /*Diseño del navegador del header y Navergador de la página web*/
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Raleway&family=Ubuntu:wght@500&family=Ubuntu&display=swap');
 
 *{
     padding: 0;
@@ -12,52 +12,51 @@ body{
     background-color: #fff;
 }
 a, li{
-    font-size: 20px;
-    font-family: 'Roboto', sans-serif ;
+    font-family: 'Ubuntu', sans-serif ;
     color: #fff;
 }
-.logo-header img{
-    background: transparent;
-    width: 120px;
-}
-.logo-header2 img{
+header{
     display: flex;
-    align-items: center;
-    width: 75px;
-    height: 50px;
+    justify-content: space-between;
+    background-color: #1b396a;padding: 10px;
+    font-family: 'Ubuntu';
 }
 .logo-header{
     display: flex;
     align-items: center;
-    color: #fff;
+}
+.logoTec{
+    display: flex;
+    align-items: center;
 }
 .logo-header h1{
-    text-align: center;
-    font-family: 'Roboto', sans-serif ;
+    font-family: 'Ubuntu';
+    padding-left: 320px;
+    font-weight: 50;
     color: #fff;
-    margin-left: 15px;
-    font-size: 23px;
 }
 .logo-header h1:hover{
-    color: #FFC300	;
+    font-weight: 50;
+    color: #FFC300;
 }
-header{
-    background-color: #1b396a;
-    display: flex;
-    justify-content: space-between;
+.tecB{
+    height: 50px;
+}
+.tecC{
+    height: 50px;
+    width: 55px;
+}
+.logoTec ul{
+    display: flex; 
     align-items: center;
-    padding: 10px 20px;
 }
-.nav-menu ul{
-    display: flex;
-    align-items: center;
-    padding-left: 450px;
+.logoTec li{
+    
+    font-weight: 50;
+    font-size: 15px;
+    padding-right: 10px;
 }
-.nav-menu li{
-    justify-items: center;
-    margin-right: 1.5rem;
-}
-.nav-menu a:hover{
+.logoTec a:hover{
     color: #FFC300	;
 }
 .menu-icon img{
@@ -75,58 +74,74 @@ header{
 }
 .seccion{
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 .objetivo{
-    background: #efefef;
     padding:50px;
 }
+.objetivo h2{
+    color: #fff;
+    font-weight: 500;
+    padding: 10px;
+    background: #1b396a;
+}
 .seccion p{
+    background: #f1cd57;
     font-size: 20px;
-    padding-top: 30px;
+    padding: 15px 50px 15px 50px;
     text-align: justify;
 }
 .ubicacion{
-    background-color: #efefef;
     padding: 50px;
 }
+.ubicacion h2{
+    color: #fff;
+    
+    font-weight: 500;
+    padding: 10px;
+    background: #1b396a;
+}
 .ubicacion p{
-    font-size: 20px;
-    padding-top: 30px;
+    background: #f1cd57;
+    padding: 15px 50px 15px 50px;
+    padding-top: 15px;
     text-align: justify;
 }
 .ubicacion iframe{
+    margin-top: 30px;
     width: 65%;
     height: 380px;
 }
 
 /*Estilos del Aside*/
-.datosAside{
-    margin-left: 80px;
+.datosAside h2{
+    padding-top: 40px;
+    color: #1b396a;    
+    font-weight: 500;
+    font-weight: 10px;
 }
 .datosAside{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     text-align: center;
 }
 .container {
-    width: 85%;
+    width: 77%;
     display: block;
     max-width: 1100px;
 }
 .card{
     width: 100%;
-    height: 175px;
+    height: 164px;
     margin: 20px;
     border-radius: 6px;
     overflow: hidden;
-    background: #efefef;
+    background: #f1cd57;
     transition: all 400ms ease;
 }
 .card:hover{
     background: #1b396a;
-    color: #fff;
+    color: #f1cd57;
     transform: translateY(-3%);
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 4);
 }
 .card img{
     width: 50%;
@@ -144,106 +159,73 @@ header{
     margin-bottom: 10px;
 }
 .datosAside a{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     display: inline-block;
+    background: #1b396a;
     padding: 10px;
-    margin-top: 10px;
-    color: #1b396a;
-    border: 3px solid #FFC300;
-    border-radius: 10px;
+    color: #fff;
+    border-radius: 5px;
     transition: all 400ms ease;
 }
 .datosAside a:hover{
     background: #FFC300;
-    color: #1b396a;
-    border: 3px solid #1b396a;
+    font-family: 'Ubuntu';    color: #1b396a;
 }
-
-
-
-
-/*Estilos del body*/
-/*.seccion{
-    background: #efefef;
-    border: 5px solid #1b396a;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-    height: 500px;
-    width: 750px;
-    margin-top: 50px;
-    margin-left: 285px;
-}
-.info p{
-    display: flex;
-    margin-left: 250px;
-    margin-right: 50PX;
-    margin-top: -320px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    text-align: justify;
-}
-.seccion h1{
-    margin-top: 20px;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-size: 50px;
-}
-.info img{
-    height: 350px;
-    width: 250px;
-    margin-top: 35px;
-}*/
 /*Estilos del Footer*/
 footer{
     background: #1b396a;
     width: 100%;
-    height: 380px;
+    height: 360px;
     margin-top: 50px;
     color: #fff;
 }
 .datEsc{
     padding: 50px 150px;
 }
-.logos{
+.redes{
     display: flex;
     justify-content: center;
+    align-items: center;
+    padding-top: 50px;
 }
-.logos img{
-    padding-left: 5px;
-    height: 30px;
+.redes img{
+    padding-left: 15px;
+    height: 25px;
+    margin-bottom: -20px;
 }
 .datEsc li{
-    font-size: 17px;
+    font-size: 15px;
     padding: 3px;
 }
 .dat{
-    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .dat li{
-    font-size: 17px;
+    font-size: 15px;
     text-align: center; 
-    padding: 3px;
+    padding: 0px;
 }
 /*Estilos para el tamaño de display 760px)*/
-@media (max-width: 768px){
+@media (min-width: 768px) and (max-width: 1023px){
     header{
-        background-color: #ff69b4;
-        display: flex;
-        align-items: center;
-        padding: 10px;
+    background-color: #1b396a;
+    font-family: 'Ubuntu';
     }
     .logo-header h1{
-        font-family: 'Roboto' , sans-serif;
-        font-size: 28px;
-        padding-left: 6rem;
+        font-family: 'Ubuntu' , sans-serif;
+        font-size: 30px;
+        padding-left: 120px;
     }
     .checkbtn{
         display: block;
+        color: #fff;
     }
     .menu-icon{
         display: block;
-        position: fixed;
-        top: 14px;
+        position: absolute;
+        top: 20px;
         right: 20px;
         cursor: pointer;
     }
@@ -262,7 +244,7 @@ footer{
         display: block;
         position: fixed;
         top: 60px;
-        left: -165%;
+        left: 100%;
         background: #191970;
         width: 100%;
         height: 100vh;
@@ -275,7 +257,7 @@ footer{
         margin: 0;
     }
     #check:checked ~ ul{
-        left: -400px;
+        left: 400px;
         transition: all .35s;
 
     }
@@ -294,14 +276,14 @@ footer{
         margin-left: 250px;
         margin-right: 50PX;
         margin-top: -320px;
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Ubuntu', sans-serif;
         font-size: 20px;
         text-align: justify;
     }
     .seccion h1{
         margin-top: 20px;
         text-align: center;
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Ubuntu', sans-serif;
         font-size: 50px;
     }
     .info img{

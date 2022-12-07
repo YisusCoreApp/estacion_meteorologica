@@ -12,14 +12,30 @@
 <body>
     <header class="header">
         <div class="logo-header">
+            <img src="assets/LogoTecNM Blanco.png" alt="" / class="tecB">
+            
+            <h1>Estación Meteorológica TecNM</h1>
+            </div>
+            
+            <div class="logoTec">
+                <input type="checkbox" id="check" />
+                <label for="check" class="checkbtn">
+                  <i class="menu-icon"><img src="assets/menu.svg" alt="" /></i>
+                </label>
+            <ul>
+                <li><a href="#">Sobre Nosotros</a></li>
+                <li><a href="datos/datMet.html">Datos Meteorológicos</a></li>
+            </ul>
+            <img src="assets/ITCs.png" alt="" class="tecC"/>
+        </div>
+        
+
+    <!-- <header class="header">
+        <div class="logo-header">
             <img src="assets/LogoTecNM Blanco.png" alt="" />
             <h1>Estación Meteorológica TecNM</h1>
         </div>
-        <nav class="nav-menu">
-            <input type="checkbox" id="check" />
-            <label for="check" class="checkbtn">
-                <i class="menu-icon"><img src="assets/menu.svg" alt="" /></i>
-            </label>
+
             <ul>
                 <li><a href="#">¿Qué es?</a></li>
                 <li><a href="datos/datMet.html">Datos Meteorológicos</a></li>
@@ -28,7 +44,8 @@
         <div class="logo-header2">
             <img src="assets/ITCs.png" alt=""/>
         </div>
-    </header>
+    </header>-->
+</header>
 
     <div class="contenedor">
     <section class="seccion">
@@ -43,15 +60,15 @@
             <h2 class="nomUbicacion">
                 Ubicación
             </h2>
-            <p class="ubi">
-                La estación Meteorológica se encuentra ubicada en el Tecnológico Nacional de México campus Cuautla en el libramiento Cuautla - Oaxaca de la colonia Juan Morales que pertenece a la ciudad de Yecapixtla Morelos.
+            <p>
+                La estación Meteorológica se encuentra ubicada en el Tecnológico Nacional de México campus Cuautla en el libramiento Cuautla - Oaxaca de la colonia Juan Morales que pertenece al municipio de Yecapixtla Morelos.
             </p>
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15105.26758750137!2d-98.9212429!3d18.8285723!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5491f37abc9f4641!2sInstituto%20Tecnol%C3%B3gico%20de%20Cuautla!5e0!3m2!1ses-419!2smx!4v1583522953536!5m2!1ses-419!2smx" frameborder="0"></iframe>
         </article>
     </section>
 
 <aside class="datosAside">
-    <h3>Datos Meteorológicos</h3>
+    <h2>Datos Meteorológicos</h2>
     <div class="container">
         <div class="card">
             <figure>
@@ -59,7 +76,7 @@
             </figure>
             <div class="contenido">
                 <h3>Temperatura</h3>
-                <p>Dato a Mostrar</p>
+                <p  id="temperaturaB">Dato a Mostrar</p>
             </div>
         </div>
         <div class="card">
@@ -68,7 +85,7 @@
             </figure>
             <div class="contenido">
                 <h3>Altitud</h3>
-                <p>Dato a Mostrar</p>
+                <p id="altitud">Dato a Mostrar</p>
             </div>
         </div>
         <div class="card">
@@ -77,7 +94,7 @@
             </figure>
             <div class="contenido">
                 <h3>Rad. Solar</h3>
-                <p>Dato a Mostrar</p>
+                <p id="radSol">Dato a Mostrar</p>
             </div>
         </div>
         <div class="card">
@@ -86,7 +103,7 @@
             </figure>
             <div class="contenido">
                 <h3>Humedad</h3>
-                <p>Dato a Mostrar</p>
+                <p id="humedad">Dato a Mostrar</p>
             </div>
         </div>
     </div>
@@ -104,7 +121,7 @@
                     <li>Telefonos:</li>
                     <li>7351222242 / 7353536496</li>
                 </ul>
-                <div class="logos">
+                <div class="redes">
                     <a href="https://www.cuautla.tecnm.mx/" target="_blank" title="Página Oficial ITC"><img src="assets/ITCs.png" alt=""></a>
                     <a href="https://www.facebook.com/ITCuautlaOficial/" target="_blank"><img src="assets/facebook.png" alt=""></a>
                     <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><img src="assets/ico-gmail.png" alt=""></a>
@@ -122,5 +139,9 @@
             </div>
         </div>
     </footer>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script>
+    <script src="datos/conexion.bd.js"></script>
 </body>
 </html>
