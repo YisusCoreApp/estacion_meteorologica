@@ -1,106 +1,126 @@
 /*Diseño del navegador del header y Navergador de la página web*/
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Ubuntu:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Ubuntu:wght@500&display=swap");
 
-*{
+* {
     padding: 0;
     margin: 0;
     text-decoration: 0;
     list-style: none;
 }
-body{
-    
+
+body {
     max-width: 100%;
     background-color: #fff;
 }
-a, li{
-    font-family: 'Ubuntu', sans-serif ;
+
+a,
+li {
+    font-family: "Ubuntu", sans-serif;
     color: #fff;
 }
-.container-clock{
+
+.container-clock {
     text-align: center;
     justify-content: center;
     padding-top: 10px;
 }
-.container-clock h1{
-    font-family: 'Ubuntu';
+
+.container-clock h1 {
+    font-family: "Ubuntu";
     font-size: 100px;
     font-weight: 400;
 }
-.container-clock p{
-    font-family: 'Ubuntu';  
+
+.container-clock p {
+    font-family: "Ubuntu";
     font-size: 35px;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: "Ubuntu", sans-serif;
 }
 
-header{
+header {
     display: flex;
     justify-content: space-between;
-    background-color: #1b396a;padding: 10px;
-    font-family: 'Ubuntu';
+    background-color: #1b396a;
+    padding: 10px;
+    font-family: "Ubuntu";
 }
-.logo-header{
+
+.logo-header {
     display: flex;
     align-items: center;
 }
-.logoTec{
+
+.logoTec {
     display: flex;
     align-items: center;
 }
-.logo-header h1{
-    font-family: 'Ubuntu';
+
+.logo-header h1 {
+    font-family: "Ubuntu";
     padding-left: 320px;
     font-weight: 50;
     color: #fff;
 }
-.logo-header h1:hover{
+
+.logo-header h1:hover {
     font-weight: 50;
-    color: #FFC300;
+    color: #ffc300;
 }
-.tecB{
+
+.tecB {
     height: 50px;
 }
-.tecC{
+
+.tecC {
     height: 50px;
     width: 55px;
 }
-.logoTec ul{
-    display: flex; 
+
+.logoTec ul {
+    display: flex;
     align-items: center;
 }
-.logoTec li{
+
+.logoTec li {
     font-weight: 50;
     font-size: 15px;
     padding-right: 10px;
 }
-.logoTec a:hover{
-    color: #FFC300	;
+
+.logoTec a:hover {
+    color: #ffc300;
 }
-.menu-icon img{
+
+.menu-icon img {
     width: 30px;
     height: 30px;
     border-radius: 2px;
 }
-.menu-icon, #check{
+
+.menu-icon,
+#check {
     display: none;
 }
 
 /*Estilos de cards*/
-.container{
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 15px;
 }
-.card{
+
+.card {
     width: 200px;
     height: 180px;
     border: 3px solid #191970;
     border-radius: 40px;
     margin: 20px;
-    font-family: 'Ubuntu';
+    font-family: "Ubuntu";
     font-size: 20px;
 }
-.card:hover{
+
+.card:hover {
     background: #f1cd57;
     color: #191970;
     width: 200px;
@@ -108,127 +128,315 @@ header{
     border: 3px solid #191970;
     border-radius: 40px;
     margin: 20px;
-    font-family: 'Ubuntu';
+    font-family: "Ubuntu";
     font-size: 20px;
     transform: translateY(-3%);
 }
-.card img{
+
+.card img {
     padding-top: 10px;
     margin-left: 63px;
     width: 80px;
     height: 80px;
 }
-.card-title{
+
+.card-title {
     display: flex;
     justify-content: center;
 }
-.card-text{
+
+.card-text {
     padding: 15px;
     text-align: center;
     margin: 0 20px 15px 20px;
 }
 
-.container2{
+.container2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 15px; /*top, rigth, bottom, left*/
+    padding: 15px;
+    /*top, rigth, bottom, left*/
 }
-.container3{
+
+.container3 {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 15px;
 }
-footer{
+
+footer {
     background: #1b396a;
     width: 100%;
     height: 360px;
     margin-top: 50px;
     color: #fff;
 }
-.datEsc{
+
+.datEsc {
     padding: 50px 150px;
 }
-.redes{
+
+.redes {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 50px;
 }
-.redes img{
+
+.redes img {
     padding-left: 15px;
     height: 25px;
     margin-bottom: -20px;
 }
-.datEsc li{
+
+.datEsc li {
     font-size: 15px;
     padding: 3px;
 }
-.dat{
+
+.dat {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.dat li{
+
+.dat li {
     font-size: 15px;
-    text-align: center; 
+    text-align: center;
     padding: 0px;
 }
+
 /*Estilos para el tamaño de display 760px)*/
-@media (max-width: 768px){
-    header{
-        background-color: #FFC300;
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        width: 98%;
+        height: 35px;
+        font-family: "Ubuntu";
+    }
+
+    .logo-header {
         display: flex;
         align-items: center;
-        padding: 10px;
     }
-    .logo-header h1{
-        font-family: 'Ubuntu' , sans-serif;
-        font-size: 28px;
-        padding-left: 6rem;
+
+    .logo-header h1 {
+        font-size: 30px;
+        font-family: "Ubuntu";
+        font-weight: 50;
+        padding-left: 15px;
+        color: #fff;
     }
-    .checkbtn{
+
+    .tecB {
+        height: 40px;
+    }
+
+    .tecC {
+        height: 40px;
+        width: 45px;
+    }
+
+    .checkbtn {
         display: block;
     }
-    .menu-icon{
+
+    .menu-icon {
         display: block;
-        position: fixed;
-        top: 14px;
-        right: 20px;
+        position: absolute;
+        top: 12px;
+        right: 60px;
         cursor: pointer;
     }
-    .logo-header img{
-        width: 80px;
-        padding-left: 8px;
-    }
-    .logo-header2 img{
-        display: flex;
-        align-items: center;
-        width: 40px;
-        height: 30px;
-        padding-right: 50px;
-    }
-    .nav-menu ul{
+
+    .logoTec ul {
         display: block;
         position: fixed;
-        top: 60px;
-        left: -165%;
-        background: #191970;
+        top: 70px;
+        left: -100%;
+        background: #1b396a;
         width: 100%;
         height: 100vh;
         right: 0;
     }
-    .nav-menu ul li{
-        padding: 1rem;
+
+    .logoTec ul li {
+        font-size: 25px;
+        padding: 2rem;
         display: flex;
         justify-content: center;
         margin: 0;
     }
 
-    #check:checked ~ ul{
-        left: -400px;
-        transition: all .35s;
+    .logoTec ul li:last-child {
+        background: none;
+        padding: 1rem;
+    }
 
+    #check:checked~ul {
+        left: 0;
+        transition: all 0.15s;
+    }
+
+    /*Estilos cartas y reloj*/
+    .container-clock h1 {
+        font-family: "Ubuntu";
+        font-size: 80px;
+        font-weight: 400;
+    }
+
+    .container-clock p {
+        font-family: "Ubuntu";
+        font-size: 40px;
+        font-family: "Ubuntu", sans-serif;
+        padding-bottom: 25px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+    }
+
+    .card {
+        width: 140px;
+        height: 130px;
+        border: 3px solid #191970;
+        border-radius: 40px;
+        margin: 10px;
+        font-family: "Ubuntu";
+        font-size: 15px;
+    }
+
+    .card:hover {
+        background: #f1cd57;
+        color: #191970;
+        width: 140px;
+        height: 130px;
+        border: 3px solid #191970;
+        border-radius: 40px;
+        margin: 10px;
+        font-family: "Ubuntu";
+        font-size: 15px;
+        transform: translateY(-3%);
+    }
+
+    .card img {
+        padding-top: 10px;
+        margin-left: 30%;
+        width: 60px;
+        height: 60px;
+    }
+
+    .container3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+    }
+
+    /*estilos footer*/
+    footer {
+        display: block;
+        background: #1b396a;
+        width: 100%;
+        height: 360px;
+        margin-top: 50px;
+        color: #fff;
+    }
+
+    .redes {
+        padding-top: 50px;
+    }
+
+    .redes img {
+        padding-left: 20px;
+        height: 25px;
+        margin-bottom: -20px;
+    }
+
+    .datEsc li {
+        text-align: center;
+        font-size: 15px;
+        padding: 3px;
+    }
+}
+
+/*---------------------------------------------------*/
+/*Estilos para Celular*/
+@media (max-width: 767px) and (min-width: 320px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        width: 540px;
+        height: 40px;
+        font-family: "Ubuntu";
+    }
+
+    .logo-header {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo-header h1 {
+        font-size: 20px;
+        font-family: "Ubuntu";
+        font-weight: 50;
+        padding-left: 15px;
+        color: #fff;
+    }
+
+    .tecB {
+        height: 40px;
+    }
+
+    .tecC {
+        height: 40px;
+        width: 45px;
+    }
+
+    .checkbtn {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+        padding-right: 15px;
+        top: 14px;
+        right: 80px;
+        cursor: pointer;
+    }
+
+    .logoTec ul {
+        display: block;
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        background: #1b396a;
+        width: 100%;
+        height: 100vh;
+        right: 0;
+    }
+
+    .logoTec ul li {
+        font-size: 25px;
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .logoTec ul li:last-child {
+        background: none;
+        padding: 1rem;
+    }
+
+    #check:checked~ul {
+        left: 0;
+        transition: all 0.15s;
     }
 }

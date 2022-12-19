@@ -11,7 +11,7 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 const datosMeteorologicos = {
-  temperaturaB: "temperaturaBMP",
+  temperaturaB:"temperaturaBMP",
   presion: "presion",
   altitud: "altitud",
   temperaturaD: "tempdhd22",
@@ -28,4 +28,9 @@ for (const key in datosMeteorologicos) {
   const element = document.getElementById(""+ key);
   let dbRef = firebase.database().ref().child(datosMeteorologicos[key]);
   dbRef.on("value", (snap) => (element.innerText = snap.val()));
+
+
 }
+
+
+
