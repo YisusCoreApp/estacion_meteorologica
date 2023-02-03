@@ -20,6 +20,7 @@ li {
 }
 
 header {
+  max-width: 100%;
   display: flex;
   justify-content: space-between;
   background-color: #1b396a;
@@ -212,6 +213,7 @@ header {
 
 /*Estilos del Footer*/
 footer {
+  max-width: 100%;
   background: #1b396a;
   width: 100%;
   height: 360px;
@@ -272,7 +274,7 @@ footer {
     font-size: 30px;
     font-family: "Ubuntu";
     font-weight: 50;
-    padding-left: 80px;
+    padding-left: 10px;
     color: #fff;
   } 
 
@@ -326,7 +328,7 @@ footer {
     transition: all 0.15s;
   }
 
-  /*estilos meni*/
+  /*estilos main*/
   .contenedor {
     display: block;
     padding: 5px;
@@ -557,59 +559,53 @@ footer {
   header {
     display: flex;
     justify-content: space-between;
-    width: 540px;
-    height: 40px;
+    max-width: 100%;
+    height: 35px;
     font-family: "Ubuntu";
   }
-
-  .logo-header {
-    display: flex;
-    align-items: center;
-  }
-
   .logo-header h1 {
-    font-size: 20px;
+    font-size: 18px;
+    text-align: center;
     font-family: "Ubuntu";
     font-weight: 50;
-    padding-left: 15px;
+    padding-left: 2px;
     color: #fff;
+    padding: 2px;
   }
-
-  .tecB {
-    height: 40px;
-  }
-
-  .tecC {
-    height: 40px;
-    width: 45px;
-  }
-
   .checkbtn {
     display: flex;
   }
-
+  .logo-header img{
+    height: 25px;
+    width: 50px;
+  }
+  .logoTec img{
+    height: 25px;
+    width: 28px;
+    padding-right: 2px;
+  }
   .menu-icon {
-    display: block;
-    padding-right: 15px;
-    top: 14px;
-    right: 80px;
-    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: 5px;
+    height: 5px;
+    padding-right: 22px;
   }
 
   .logoTec ul {
     display: block;
     position: fixed;
-    top: 70px;
+    top: 65px;
     left: -100%;
     background: #1b396a;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     right: 0;
   }
 
   .logoTec ul li {
-    font-size: 25px;
-    padding: 2rem;
+    font-size: 18px;
+    padding: 25px;
     display: flex;
     justify-content: center;
     margin: 0;
@@ -624,4 +620,196 @@ footer {
     left: 0;
     transition: all 0.15s;
   }
+  /*estilos main*/
+  .contenedor {
+    display: block;
+    padding: 5px;
+    max-width: 100%;
+  }
+
+  .seccion {
+    text-align: center;
+    font-family: "Ubuntu", sans-serif;
+  }
+
+  .objetivo {
+    padding: 10px;
+    border-radius: 50px;
+  }
+
+  .objetivo h2 {
+    font-size: 15px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 500;
+    padding: 10px;
+    background: #1b396a;
+  }
+
+  .seccion p {
+    border-radius: 5px;
+    background: #f1cd57;
+    font-size: 15px;
+    padding: 5px 15px 5px 15px;
+    text-align: justify;
+  }
+
+  .ubicacion {
+    padding: 10px;
+  }
+
+  .ubicacion h2 {
+    font-size: 15px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 500;
+    padding: 10px;
+    background: #1b396a;
+  }
+
+  .ubicacion p {
+    font-size: 15px;
+    border-radius: 5px;
+    background: #f1cd57;
+    padding: 5px 15px 10px 15px;
+    padding-top: 15px;
+    text-align: justify;
+  }
+
+  .ubicacion iframe {
+    margin-top: 30px;
+    width: 85%;
+    height: 200px;
+  }
+  /*estios aside*/
+  .datosAside h2 {
+    padding-top: 40px;
+    color: #1b396a;
+    font-size: 18px;
+  }
+
+  .datosAside {
+    font-family: "Ubuntu", sans-serif;
+    text-align: center;
+  }
+
+  .container {    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* height: 190px; */
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+    /*padding-left: 11.9%;*/
+  }
+
+.card img{
+  /* display: none; */
+  width: 60px;
+  /* height: 40px; */
+  }
+
+
+  .card {
+    margin: 2px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #1b396a;
+    color: #fff;
+    transition: all 400ms ease;
+  }
+
+  .card:hover {
+    background: #f1cd57;
+    color: #1b396a;
+    transform: translateY(-3%);
+  }
+
+  .card .contenido p {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .card .contenido h3 {
+    padding-top: 0;
+    font-size: medium;
+    text-align: center;
+  }
+
+  .datosAside a {
+    font-family: "Ubuntu", sans-serif;
+    display: inline-block;
+    background: #1b396a;
+    padding: 10px;
+    color: #fff;
+    border-radius: 5px;
+    transition: all 400ms ease;
+  }
+
+  .datosAside a:hover {
+    background: #ffc300;
+    font-family: "Ubuntu";
+    color: #1b396a;
+  }
+
+  footer{
+    display: block;
+    max-width: 100%;
+    height: 200%;
+    margin-top: 1rem;
+  }
+  .footer{
+    max-width: 100%;
+    /* height: 450px; */
+  }
+  .datEsc{
+    padding: 50px ;
+  }
+  .datEsc ul {
+    font-size: 15px;
+    text-align: center;
+    padding: 0px;
+  }
+  .dat {
+    padding: 15px 25PX 20PX 20PX;
+  }
+  
+  
+  /*{
+    display: block;
+    background: #1b396a;
+    max-width: 100%;
+    margin-top: 5px;
+    color: #fff;
+  }
+
+  .datEsc{
+    text-align: left;
+  }
+
+  .redes {
+    padding-top: 30px;
+  }
+
+  .redes img {
+    padding-left: 20px;
+    height: 25px;
+    margin-bottom: -20px;
+  }
+
+  .dat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+  .datEsc ul {
+    font-size: 15px;
+    text-align: center;
+    padding: 0px;
+  }*/
+  
 }

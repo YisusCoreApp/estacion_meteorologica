@@ -38,6 +38,7 @@ li {
 }
 
 header {
+    max-width: 100%;
     display: flex;
     justify-content: space-between;
     background-color: #1b396a;
@@ -111,6 +112,8 @@ header {
 }
 
 .card {
+    background: #1b396a;
+    color: #fff;
     width: 200px;
     height: 180px;
     border: 3px solid #191970;
@@ -122,10 +125,10 @@ header {
 
 .card:hover {
     background: #f1cd57;
-    color: #191970;
+    color: #1b396a;
     width: 200px;
     height: 180px;
-    border: 3px solid #191970;
+    border: 3px solid #1b396a;
     border-radius: 40px;
     margin: 20px;
     font-family: "Ubuntu";
@@ -141,14 +144,14 @@ header {
 }
 
 .card-title {
+    font-weight: 100;
     display: flex;
     justify-content: center;
 }
 
 .card-text {
-    padding: 15px;
+    padding-top: 15px;
     text-align: center;
-    margin: 0 20px 15px 20px;
 }
 
 .container2 {
@@ -167,6 +170,7 @@ header {
 }
 
 footer {
+    max-width: 100%;
     background: #1b396a;
     width: 100%;
     height: 360px;
@@ -209,50 +213,50 @@ footer {
 }
 
 /*Estilos para el tamaño de display 760px)*/
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023px) {
     header {
         display: flex;
         justify-content: space-between;
-        width: 98%;
+        max-width: 100%;
         height: 35px;
         font-family: "Ubuntu";
-    }
-
-    .logo-header {
+      }
+    
+      .logo-header {
         display: flex;
         align-items: center;
-    }
-
-    .logo-header h1 {
+      }
+    
+      .logo-header h1 {
         font-size: 30px;
         font-family: "Ubuntu";
         font-weight: 50;
-        padding-left: 15px;
+        padding-left: 10px;
         color: #fff;
-    } 
-
-    .tecB {
+      } 
+    
+      .tecB {
         height: 40px;
-    }
-
-    .tecC {
+      }
+    
+      .tecC {
         height: 40px;
         width: 45px;
-    }
-
-    .checkbtn {
+      }
+    
+      .checkbtn {
         display: block;
-    }
-
-    .menu-icon {
+      }
+    
+      .menu-icon {
         display: block;
         position: absolute;
         top: 12px;
         right: 60px;
         cursor: pointer;
-    }
-
-    .logoTec ul {
+      }
+    
+      .logoTec ul {
         display: block;
         position: fixed;
         top: 70px;
@@ -261,25 +265,25 @@ footer {
         width: 100%;
         height: 100vh;
         right: 0;
-    }
-
-    .logoTec ul li {
+      }
+    
+      .logoTec ul li {
         font-size: 25px;
         padding: 2rem;
         display: flex;
         justify-content: center;
         margin: 0;
-    }
-
-    .logoTec ul li:last-child {
+      }
+    
+      .logoTec ul li:last-child {
         background: none;
         padding: 1rem;
-    }
-
-    #check:checked~ul {
+      }
+    
+      #check:checked ~ ul {
         left: 0;
         transition: all 0.15s;
-    }
+      }
 
     /*Estilos cartas y reloj*/
     .container-clock h1 {
@@ -343,7 +347,7 @@ footer {
     footer {
         display: block;
         background: #1b396a;
-        width: 100%;
+        max-width: 100%;
         height: 360px;
         margin-top: 50px;
         color: #fff;
@@ -372,71 +376,148 @@ footer {
     header {
         display: flex;
         justify-content: space-between;
-        width: 540px;
-        height: 40px;
+        max-width: 100%;
+        height: 35px;
         font-family: "Ubuntu";
-    }
-
-    .logo-header {
-        display: flex;
-        align-items: center;
-    }
-
-    .logo-header h1 {
-        font-size: 20px;
+      }
+      .logo-header h1 {
+        font-size: 18px;
+        text-align: center;
         font-family: "Ubuntu";
         font-weight: 50;
-        padding-left: 15px;
+        padding-left: 2px;
         color: #fff;
-    }
-
-    .tecB {
-        height: 40px;
-    }
-
-    .tecC {
-        height: 40px;
-        width: 45px;
-    }
-
-    .checkbtn {
+        padding: 2px;
+      }
+      .checkbtn {
         display: flex;
-    }
-
-    .menu-icon {
-        display: block;
-        padding-right: 15px;
-        top: 14px;
-        right: 80px;
-        cursor: pointer;
-    }
-
-    .logoTec ul {
+      }
+      .logo-header img{
+        height: 25px;
+        width: 50px;
+      }
+      .logoTec img{
+        height: 25px;
+        width: 28px;
+        padding-right: 2px;
+      }
+      .menu-icon {
+        display: flex;
+        align-items: center;
+        width: 5px;
+        height: 5px;
+        padding-right: 22px;
+      }
+    
+      .logoTec ul {
         display: block;
         position: fixed;
-        top: 70px;
+        top: 65px;
         left: -100%;
         background: #1b396a;
         width: 100%;
-        height: 100vh;
+        height: 100%;
         right: 0;
-    }
-
-    .logoTec ul li {
-        font-size: 25px;
-        padding: 2rem;
+      }
+    
+      .logoTec ul li {
+        font-size: 18px;
+        padding: 25px;
         display: flex;
         justify-content: center;
         margin: 0;
-    }
-
-    .logoTec ul li:last-child {
+      }
+    
+      .logoTec ul li:last-child {
         background: none;
         padding: 1rem;
-    }
-
-    #check:checked~ul {
+      }
+    
+      #check:checked ~ ul {
         left: 0;
         transition: all 0.15s;
+      }
+
+      /*Estilos cartas y reloj*/
+      .container-clock h1 {
+        font-family: "Ubuntu";
+        font-size: 30px;
+        font-weight: 400;
     }
+
+    .container-clock p {
+        font-family: "Ubuntu";
+        font-size: 20px;
+        font-family: "Ubuntu", sans-serif;
+        padding-bottom: 25px;
+    }
+    .container {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        border: 3px solid #191970;
+        border-radius: 40px;
+        margin: 10px;
+    }
+    .card h5{
+        font-size: 18px;
+        text-align: center;
+    }
+    .card p{
+        font-size: 18px;
+    }
+
+    .card:hover {
+        background: #f1cd57;
+        color: #191970;
+        width: 90%;
+        border: 3px solid #191970;
+        border-radius: 40px;
+        margin: 10px;
+        font-family: "Ubuntu";
+        font-size: 18px;
+        transform: translateY(-3%);
+    }
+
+    .card img {
+       
+        margin-left: 20px;
+        margin-right: auto;
+      
+    }
+    .card .card-body {
+        margin-right: auto;
+    }
+    .container2{
+        flex-wrap: wrap;
+    }
+    .container3 {
+        flex-wrap: wrap;
+    }
+
+    footer{
+        display: block;
+        max-width: 100%;
+        height: 200%;
+      }
+      .footer{
+        max-width: 100%;
+      }
+      .datEsc{
+        padding: 50px;
+      }
+      .datEsc ul {
+        font-size: 15px;
+        text-align: center;
+        padding: 0px;
+      }
+      .dat {
+        padding: 15px 25PX 20PX 20PX;
+      }
+
 }
