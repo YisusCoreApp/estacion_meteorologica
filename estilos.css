@@ -1,4 +1,3 @@
-/*Diseño del navegador del header y Navergador de la página web*/
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Raleway&family=Ubuntu:wght@500&family=Ubuntu&display=swap");
 
 * {
@@ -13,8 +12,7 @@ body {
   background-color: #fff;
 }
 
-a,
-li {
+a,li {
   font-family: "Ubuntu", sans-serif;
   color: #fff;
 }
@@ -80,8 +78,7 @@ header {
   border-radius: 2px;
 }
 
-.menu-icon,
-#check {
+.menu-icon, #check {
   display: none;
 }
 
@@ -260,11 +257,13 @@ footer {
   header {
     display: flex;
     justify-content: space-between;
-    width: 98%;
+    width: 97.5%;
     height: 35px;
     font-family: "Ubuntu";
   }
-
+  .header{
+    position: fixed;
+  }
   .logo-header {
     display: flex;
     align-items: center;
@@ -302,7 +301,7 @@ footer {
   .logoTec ul {
     display: block;
     position: fixed;
-    top: 70px;
+    top: 56px;
     left: -100%;
     background: #1b396a;
     width: 100%;
@@ -335,6 +334,7 @@ footer {
   }
 
   .seccion {
+    padding-top: 50px;
     text-align: center;
     font-family: "Ubuntu", sans-serif;
   }
@@ -447,86 +447,7 @@ footer {
     color: #1b396a;
   }
 
-  /* header{
-    background-color: #1b396a;
-    font-family: 'Ubuntu';
-    }
-    .logo-header h1{
-        font-family: 'Ubuntu' , sans-serif;
-        font-size: 10px;
-    }
-    .checkbtn{
-        display: block;
-    }
-    .menu-icon{
-        display: block;
-        position: fixed;
-        top: 20px;
-        right: 20px;
-        cursor: pointer;
-    }
-    .logo-header img{
-        width: 80px;
-        padding-left: 8px;
-    }
-    .logo-header2 img{
-        display: flex;
-        align-items: center;
-        width: 40px;
-        height: 30px;
-        padding-right: 5px;
-    }
-    .nav-menu ul{
-        display: block;
-        position: fixed;
-        top: 60px;
-        left: 100%;
-        background: #191970;
-        width: 100%;
-        height: 100vh;
-        right: 0;
-    }
-    .nav-menu ul li{
-        padding: 1rem;
-        display: flex;
-        justify-content: center;
-        margin: 0;
-    }
-    #check:checked ~ ul{
-        left: 400px;
-        transition: all .35s;
-
-    }*/
-
-  /*Estilos del Body
-    .seccion{
-        background: #FFC300;
-        border: 5px solid #191970;
-        border-bottom-left-radius: 50px;
-        border-bottom-right-radius: 50px;
-        margin-top: 50px;
-        margin-left: 285px;
-    }
-    .info p{
-        display: flex;
-        margin-left: 250px;
-        margin-right: 50PX;
-        margin-top: -320px;
-        font-family: 'Ubuntu', sans-serif;
-        font-size: 20px;
-        text-align: justify;
-    }
-    .seccion h1{
-        margin-top: 20px;
-        text-align: center;
-        font-family: 'Ubuntu', sans-serif;
-        font-size: 50px;
-    }
-    .info img{
-        height: 350px;
-        width: 250px;
-        margin-top: 35px;
-    }*/
+ 
   footer {
     display: block;
     background: #1b396a;
@@ -559,9 +480,12 @@ footer {
   header {
     display: flex;
     justify-content: space-between;
-    max-width: 100%;
+    width: 97.5%;
     height: 35px;
     font-family: "Ubuntu";
+  }
+  .header{
+    position: fixed;
   }
   .logo-header h1 {
     font-size: 18px;
@@ -584,6 +508,8 @@ footer {
     width: 28px;
     padding-right: 2px;
   }
+
+
   .menu-icon {
     display: flex;
     align-items: center;
@@ -595,7 +521,7 @@ footer {
   .logoTec ul {
     display: block;
     position: fixed;
-    top: 65px;
+    top: 54px;
     left: -100%;
     background: #1b396a;
     width: 100%;
@@ -610,7 +536,7 @@ footer {
     justify-content: center;
     margin: 0;
   }
-
+  
   .logoTec ul li:last-child {
     background: none;
     padding: 1rem;
@@ -628,6 +554,7 @@ footer {
   }
 
   .seccion {
+    padding-top: 50px;
     text-align: center;
     font-family: "Ubuntu", sans-serif;
   }
@@ -774,42 +701,5 @@ footer {
   }
   .dat {
     padding: 15px 25PX 20PX 20PX;
-  }
-  
-  
-  /*{
-    display: block;
-    background: #1b396a;
-    max-width: 100%;
-    margin-top: 5px;
-    color: #fff;
-  }
-
-  .datEsc{
-    text-align: left;
-  }
-
-  .redes {
-    padding-top: 30px;
-  }
-
-  .redes img {
-    padding-left: 20px;
-    height: 25px;
-    margin-bottom: -20px;
-  }
-
-  .dat {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-
-  .datEsc ul {
-    font-size: 15px;
-    text-align: center;
-    padding: 0px;
-  }*/
-  
+  } 
 }

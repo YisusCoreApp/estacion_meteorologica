@@ -11,23 +11,24 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 const datosMeteorologicos = {
-  temperaturaB:"temperaturaBMP",
-  presion: "presion",
-  altitud: "altitud",
-  temperaturaD: "tempdhd22",
-  humedad: "humedadd",
-  tempAire: "temds18b20",
-  velViento: "vientokmH",
-  dirViento: "direxvien",
-  cantLluvia: "cantlluv",
-  radSol: "radsolar",
-  radU: "raduv",
+  temperaturaB:{value: "temperaturaBMP", unit: '°C'},
+  presion: {value: "presion", unit: 'PA'},
+  altitud: {value: "altitud", unit: 'M'},
+  temperaturaD: {value: "tempdhd22", unit: '°C'},
+  humedad: {value: "humedadd", unit: '%'},
+  tempAire: {value: "temds18b20", unit: '°C'},
+  velViento: {value: "vientokmH", unit: 'km/h'},
+  dirViento: {value: "direxvien", unit: 'km/h'},
+  cantLluvia: {value: "cantlluv", unit: 'mm'},
+  radSol: {value: "radsolar", unit: 'W/m²'},
+  radU: {value: "raduv", unit: 'nm'},
 };
 
-for (const key in datosMeteorologicos) {
-  const element = document.getElementById(""+ key);
-  let dbRef = firebase.database().ref().child(datosMeteorologicos[key]);
-  dbRef.on("value", (snap) => (element.innerText = snap.val()));
+for (const value in datosMeteorologicos) {
+  const element = document.getElementById(''+value);
+  console.log(datosMeteorologicos[value].value)
+  let dbRef = firebase.database().ref().child(datosMeteorologicos[value].value);
+  dbRef.on("value", (snap) => (element.innerText = snap.val() + ' ' + datosMeteorologicos[value].unit));
 }
 
 

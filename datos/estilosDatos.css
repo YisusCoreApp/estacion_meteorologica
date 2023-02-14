@@ -217,11 +217,13 @@ footer {
     header {
         display: flex;
         justify-content: space-between;
-        max-width: 100%;
+        width: 97.5%;
         height: 35px;
         font-family: "Ubuntu";
       }
-    
+      .header{
+        position: fixed;
+      }
       .logo-header {
         display: flex;
         align-items: center;
@@ -259,7 +261,7 @@ footer {
       .logoTec ul {
         display: block;
         position: fixed;
-        top: 70px;
+        top: 56px;
         left: -100%;
         background: #1b396a;
         width: 100%;
@@ -286,6 +288,10 @@ footer {
       }
 
     /*Estilos cartas y reloj*/
+    .container-clock{
+     padding-top: 50px;   
+    }
+    
     .container-clock h1 {
         font-family: "Ubuntu";
         font-size: 80px;
@@ -376,9 +382,12 @@ footer {
     header {
         display: flex;
         justify-content: space-between;
-        max-width: 100%;
+        width: 97.5%;
         height: 35px;
         font-family: "Ubuntu";
+      }
+      .header{
+        position: fixed;
       }
       .logo-header h1 {
         font-size: 18px;
@@ -412,7 +421,7 @@ footer {
       .logoTec ul {
         display: block;
         position: fixed;
-        top: 65px;
+        top: 55px;
         left: -100%;
         background: #1b396a;
         width: 100%;
@@ -439,6 +448,9 @@ footer {
       }
 
       /*Estilos cartas y reloj*/
+      .container-clock{
+        padding-top: 65px;
+      }
       .container-clock h1 {
         font-family: "Ubuntu";
         font-size: 30px;

@@ -1,146 +1,148 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="estilos.css" />
     <link rel="icon" href="assets/worldmap.svg" type="image/x-icon" />
     <title>Estación Meteorilógica</title>
-</head>
-<body>
+  </head>
+
+  <body>
     <header class="header">
-        <div class="logo-header">
-            <img src="assets/LogoTecNM Blanco.png" alt="" / class="tecB">
-            
-            <h1>Estación Meteorológica TecNM</h1>
-            </div> 
-            <div class="logoTec">
-                <input type="checkbox" id="check" />
-            <label for="check" class="checkbtn">
-              <i class="menu-icon"><img src="assets/m.png " alt="" /></i>
-            </label>
-            <ul>
-                <li><a href="#">Sobre Nosotros</a></li>
-                <li><a href="datos/datMet.html">Datos Meteorológicos</a></li>
-            </ul>
-            <img src="assets/ITCs.png" alt="" class="tecC"/>
-        </div>
-        
-
-    <!-- <header class="header">
-        <div class="logo-header">
-            <img src="assets/LogoTecNM Blanco.png" alt="" />
-            <h1>Estación Meteorológica TecNM</h1>
-        </div>
-
-            <ul>
-                <li><a href="#">¿Qué es?</a></li>
-                <li><a href="datos/datMet.html">Datos Meteorológicos</a></li>
-            </ul>
-        </nav>
-        <div class="logo-header2">
-            <img src="assets/ITCs.png" alt=""/>
-        </div>
-    </header>-->
-</header>
+      <div class="logo-header">
+        <img src="assets/LogoTecNM Blanco.png" alt="" class="tecB" />
+        <h1>Estación Meteorológica TecNM</h1>
+      </div>
+      <div class="logoTec">
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="menu-icon"><img src="assets/m.png " alt="" /></i>
+        </label>
+        <ul>
+          <li><a href="#">Sobre Nosotros</a></li>
+          <li><a href="datos/datMet.html">Datos Meteorológicos</a></li>
+        </ul>
+        <img src="assets/ITCs.png" alt="" class="tecC" />
+      </div>
+    </header>
 
     <div class="contenedor">
-    <section class="seccion">
+      <section class="seccion">
         <article class="objetivo">
-            <h2>
-                Objetivo
-            </h2>
-            <p>El objetivo del proyecto es construir una estación meteorológica y junto con ella el desarrollo de una página web optimizando los recursos a utilizar, esto para dar a conocer a los usuarios los datos climaticos que se estaran mostrando en tiempo real a travez de sensores. Entre los datos a mostrar estan la temperatura, la velocidad del viento, la humedad, dirección del viento, altitud, radiación solar entre otros datos.</p>
-
+          <h2>Objetivo</h2>
+          <p>
+            Recolección de datos del entorno climático a travez de distintas variables 
+            como lo son la temperatura, altitud, radiación solar, radiación UV entre otros datos meteorológicos.
+          </p>
         </article>
         <article class="ubicacion">
-            <h2 class="nomUbicacion">
-                Ubicación
-            </h2>
-            <p>
-                La estación Meteorológica se encuentra ubicada en el Tecnológico Nacional de México campus Cuautla en el libramiento Cuautla - Oaxaca de la colonia Juan Morales que pertenece al municipio de Yecapixtla Morelos.
-            </p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15105.26758750137!2d-98.9212429!3d18.8285723!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5491f37abc9f4641!2sInstituto%20Tecnol%C3%B3gico%20de%20Cuautla!5e0!3m2!1ses-419!2smx!4v1583522953536!5m2!1ses-419!2smx" frameborder="0"></iframe>
+          <h2 class="nomUbicacion">Ubicación</h2>
+          <p>
+            La estación Meteorológica se encuentra ubicada en el Tecnológico
+            Nacional de México campus Cuautla en el libramiento Cuautla - Oaxaca
+            de la colonia Juan Morales que pertenece al municipio de Yecapixtla
+            Morelos.
+          </p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15105.26758750137!2d-98.9212429!3d18.8285723!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5491f37abc9f4641!2sInstituto%20Tecnol%C3%B3gico%20de%20Cuautla!5e0!3m2!1ses-419!2smx!4v1583522953536!5m2!1ses-419!2smx"
+            frameborder="0"
+          ></iframe>
         </article>
-    </section>
+      </section>
 
-<aside class="datosAside">
-    <h2>Datos Meteorológicos</h2>
-    <div class="container">
-        <div class="card">
+      <aside class="datosAside">
+        <h2>Datos Meteorológicos</h2>
+        <div class="container">
+          <div class="card">
             <figure>
-                <img src="datos/datosMet/temperatura.png" alt="">
+              <img src="datos/datosMet/temperatura.png" alt="" />
             </figure>
             <div class="contenido">
-                <h3>Temp.</h3>
-                <p  id="temperaturaB"></p>
+              <h3>Temp(BPM).</h3>
+              <p id="temperaturaB"></p>
             </div>
-        </div>
-        <div class="card">
+          </div>
+          <div class="card">
             <figure>
-                <img src="datos/datosMet/indice-uv.png" alt="">
+              <img src="datos/datosMet/indice-uv.png" alt="" />
             </figure>
             <div class="contenido">
-                <h3>Rad. UV</h3>
-                <p id="radU"></p>
+              <h3>Rad. UV</h3>
+              <p id="radU"></p>
             </div>
-        </div>
-        <div class="card">
+          </div>
+          <div class="card">
             <figure>
-                <img src="datos/datosMet/sol.png" alt="">
+              <img src="datos/datosMet/sol.png" alt="" />
             </figure>
             <div class="contenido">
-                <h3>Rad. Solar</h3>
-                <p id="radSol"></p>
+              <h3>Rad. Solar</h3>
+              <p id="radSol"></p>
             </div>
-        </div>
-        <div class="card">
+          </div>
+          <div class="card">
             <figure>
-                <img src="datos/datosMet/direViento.png" alt="">
+              <img src="datos/datosMet/direViento.png" alt="" />
             </figure>
             <div class="contenido">
-                <h3>Vel. Viento</h3>
-                <p id="velViento"></p>
+              <h3>Vel. Viento</h3>
+              <p id="velViento"></p>
             </div>
+          </div>
         </div>
+        <a href="datos/datMet.html">Ver Más</a>
+      </aside>
     </div>
-    <a href="datos/datMet.html">Ver Más</a>
-</aside>
-</div>
     <footer>
-        <div class="footer">
-            <div class="datEsc">
-                <ul>
-                    <li>Dirección</li>
-                    <li>Libramiento Cuautla-Oaxaca</li>
-                    <li>S/N, Col. Juan Morales, C.P</li>
-                    <li>62826, Yecapixtla, Morelos</li>
-                    <li>Telefonos:</li>
-                    <li>7351222242 / 7353536496</li>
-                </ul>
-                <div class="redes">
-                    <a href="https://www.cuautla.tecnm.mx/" target="_blank" title="Página Oficial ITC"><img src="assets/ITCs.png" alt=""></a>
-                    <a href="https://www.facebook.com/ITCuautlaOficial/" target="_blank"><img src="assets/facebook.png" alt=""></a>
-                    <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><img src="assets/Gmail.png" alt=""></a>
-                    <a href="https://twitter.com/itcuautlaedumx" target="_blank"><img src="assets/twitter.png" alt=""></a>
-                    <a href="https://www.youtube.com/channel/UCw4gM0YbsRGLtijurDCJ9jg" target="_blank"><img src="assets/youtube.png" alt=""></a>
-            </div>
-                </div>
-                </div>
-            <div class="dat">
-                <ul>
-                    <li>© Copyright 2022 TecNM Campus Cuautla - Todos los Derechos Reservados
-                    </li>
-                    <li>Departamento de Comunicación y Difusión.</li>
-                </ul>
-            </div>
+      <div class="footer">
+        <div class="datEsc">
+          <ul>
+            <li>Dirección</li>
+            <li>Libramiento Cuautla-Oaxaca</li>
+            <li>S/N, Col. Juan Morales, C.P</li>
+            <li>62826, Yecapixtla, Morelos</li>
+            <li>Telefonos:</li>
+            <li>7351222242 / 7353536496</li>
+          </ul>
+          <div class="redes">
+            <a
+              href="https://www.cuautla.tecnm.mx/"
+              target="_blank"
+              title="Página Oficial ITC"
+              ><img src="assets/ITCs.png" alt=""
+            /></a>
+            <a href="https://www.facebook.com/ITCuautlaOficial/" target="_blank"
+              ><img src="assets/facebook.png" alt=""
+            /></a>
+            <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"
+              ><img src="assets/Gmail.png" alt=""
+            /></a>
+            <a href="https://twitter.com/itcuautlaedumx" target="_blank"
+              ><img src="assets/twitter.png" alt=""
+            /></a>
+            <a
+              href="https://www.youtube.com/channel/UCw4gM0YbsRGLtijurDCJ9jg"
+              target="_blank"
+              ><img src="assets/youtube.png" alt=""
+            /></a>
+          </div>
         </div>
+      </div>
+      <div class="dat">
+        <ul>
+          <li>
+            © Copyright 2022 TecNM Campus Cuautla - Todos los Derechos
+            Reservados
+          </li>
+          <li>Departamento de Comunicación y Difusión.</li>
+        </ul>
+      </div>
     </footer>
     <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
 
     <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script>
     <script src="datos/conexion.bd.js"></script>
-</body>
+  </body>
 </html>
