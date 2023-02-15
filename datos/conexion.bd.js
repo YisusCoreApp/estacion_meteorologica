@@ -12,16 +12,16 @@ firebase.initializeApp(firebaseConfig);
 
 const datosMeteorologicos = {
   temperaturaB:{value: "temperaturaBMP", unit: '°C'},
-  presion: {value: "presion", unit: 'PA'},
-  altitud: {value: "altitud", unit: 'M'},
+  presion: {value: "presion", unit: 'hPa'},
+  altitud: {value: "altitud", unit: 'm'},
   temperaturaD: {value: "tempdhd22", unit: '°C'},
   humedad: {value: "humedadd", unit: '%'},
   tempAire: {value: "temds18b20", unit: '°C'},
   velViento: {value: "vientokmH", unit: 'km/h'},
-  dirViento: {value: "direxvien", unit: 'km/h'},
+  dirViento: {value: "direxvien", unit: ''},
   cantLluvia: {value: "cantlluv", unit: 'mm'},
   radSol: {value: "radsolar", unit: 'W/m²'},
-  radU: {value: "raduv", unit: 'nm'},
+  radU: {value: "raduv", unit: ''},
 };
 
 for (const value in datosMeteorologicos) {
