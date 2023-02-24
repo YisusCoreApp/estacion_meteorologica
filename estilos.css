@@ -137,16 +137,17 @@ header {
 }
 
 /*Estilos del Aside*/
+
+.datosAside {
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+}
+
 .datosAside h2 {
   padding-top: 40px;
   color: #1b396a;
   font-weight: 500;
   font-weight: 10px;
-}
-
-.datosAside {
-  font-family: "Ubuntu", sans-serif;
-  text-align: center;
 }
 
 .container {
@@ -179,17 +180,17 @@ header {
 }
 
 .card .contenido {
-  padding: 5px;
+  padding: 10px;
   text-align: center;
-}
-
-.card .contenido p {
-  font-size: 20px;
 }
 
 .card .contenido h3 {
   font-weight: 50;
   margin-bottom: 10px;
+}
+
+.card .contenido p {
+  font-size: 20px;
 }
 
 .datosAside a {
@@ -222,6 +223,11 @@ footer {
   padding: 50px 150px;
 }
 
+.datEsc li {
+  font-size: 15px;
+  padding: 3px;
+}
+
 .redes {
   display: flex;
   justify-content: center;
@@ -233,11 +239,6 @@ footer {
   padding-left: 15px;
   height: 25px;
   margin-bottom: -20px;
-}
-
-.datEsc li {
-  font-size: 15px;
-  padding: 3px;
 }
 
 .dat {
@@ -255,11 +256,7 @@ footer {
 /*Estilos para el tamaño de display 768px)*/
 @media (min-width: 768px) and (max-width: 1023px) {
   header {
-    display: flex;
-    justify-content: space-between;
     width: 97.5%;
-    height: 35px;
-    font-family: "Ubuntu";
   }
   .header{
     position: fixed;
@@ -387,15 +384,15 @@ footer {
   }
 
   /*estilos aside*/
+  .datosAside {
+    font-family: "Ubuntu", sans-serif;
+    text-align: center;
+  }
+
   .datosAside h2 {
     padding-top: 40px;
     color: #1b396a;
     font-size: 30px;
-  }
-
-  .datosAside {
-    font-family: "Ubuntu", sans-serif;
-    text-align: center;
   }
 
   .container {
@@ -480,7 +477,7 @@ footer {
   header {
     display: flex;
     justify-content: space-between;
-    width: 97.5%;
+    max-width: 100%;
     height: 35px;
     font-family: "Ubuntu";
   }

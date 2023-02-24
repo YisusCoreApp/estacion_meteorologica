@@ -8,6 +8,7 @@ const firebaseConfig = {
   messagingSenderId: "636269542308",
   appId: "1:636269542308:web:0e04abb603cd3a3c391f31",
 };
+
 firebase.initializeApp(firebaseConfig);
 
 const datosMeteorologicos = {
