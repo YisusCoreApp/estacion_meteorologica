@@ -255,9 +255,9 @@ footer {
 
 /*Estilos para el tamaño de display 768px)*/
 @media (min-width: 768px) and (max-width: 1023px) {
-  /* header {
+  header {
     width: 97.5%;
-  } */
+  }
   .header{
     position: fixed;
   }
