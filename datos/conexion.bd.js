@@ -29,7 +29,19 @@ for (const value in datosMeteorologicos) {
   const element = document.getElementById(''+value);
   console.log(datosMeteorologicos[value].value)
   let dbRef = firebase.database().ref().child(datosMeteorologicos[value].value);
-  dbRef.on("value", (snap) => (element.innerText = snap.val() + ' ' + datosMeteorologicos[value].unit));
+ //Funcion que evaluara los datos obtenidos por los sensores, por si después del punto decimal tiene demasiados digitos, solo muestre dos, y si el tipo de dato se es nua cadena de texto lo muestre sin verse afectado.
+  dbRef.on("value", (snap) => {
+    let total
+    console.log(snap.val())
+    if(snap.val()=== 0 || typeof snap.val() === 'string') {
+      total = snap.val()
+    }else{
+      let number = snap.val().toString().split('.')
+      let newNumber = number[1].split('',2)
+      total = `${number[1]}.${newNumber.join('')}`
+    }
+    element.innerText = total + ' ' + datosMeteorologicos[value].unit
+  })
 }
 
 
