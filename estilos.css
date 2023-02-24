@@ -619,8 +619,8 @@ footer {
 
   .container {    
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    /* justify-content: space-between;
+    align-items: center; */
     /* height: 190px; */
     width: 100%;
     flex-wrap: wrap;
