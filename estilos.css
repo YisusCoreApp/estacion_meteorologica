@@ -399,11 +399,11 @@ footer {
   }
 
   .container {
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
     align-items: center;
     height: 200px;
-    width: 100%;
+    width: 100%; */
   }
 
   .card {
@@ -484,10 +484,6 @@ footer {
     height: 35px;
     font-family: "Ubuntu";
     position: fixed;
-  }
-
-  body{
-    max-width: 100%;
   }
 
   .logo-header h1 {
@@ -624,16 +620,11 @@ footer {
 
   .container {   
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 100%; 
-    /* display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     flex-wrap: wrap;
-    margin: 1rem 0; */
+    margin: 1rem 0;
   }
 
 .card img{
