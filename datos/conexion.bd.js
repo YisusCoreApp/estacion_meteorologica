@@ -38,7 +38,7 @@ for (const value in datosMeteorologicos) {
     }else{
       let number = snap.val().toString().split('.')
       let newNumber = number[1].split('',2)
-      total = `${number[1]}.${newNumber.join('')}`
+      total = `${number[0]}.${newNumber.join('')}`
     }
     element.innerText = total + ' ' + datosMeteorologicos[value].unit
   })
