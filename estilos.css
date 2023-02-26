@@ -473,7 +473,7 @@ footer {
 
 /*---------------------------------------------------*/
 /*Estilos para Celular*/
-@media  (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) {
   header {
     display: flex;
     justify-content: space-between;
@@ -482,7 +482,7 @@ footer {
     font-family: "Ubuntu";
   }
   .header{
-    position: fixed;
+    /* position: fixed; */
   }
   .logo-header h1 {
     font-size: 18px;
