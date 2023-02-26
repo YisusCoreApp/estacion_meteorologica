@@ -256,7 +256,10 @@ footer {
 /*Estilos para el tamaño de display 768px)*/
 @media (min-width: 768px) and (max-width: 1023px) {
   header {
-    width: 97.5%;
+    width: 100%;
+  }
+  body{
+    max-width: 100%;
   }
   .header{
     position: fixed;
@@ -473,7 +476,7 @@ footer {
 
 /*---------------------------------------------------*/
 /*Estilos para Celular*/
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 360px) and (max-width: 767px) {
   header {
     display: flex;
     justify-content: space-between;
@@ -481,6 +484,10 @@ footer {
     height: 35px;
     font-family: "Ubuntu";
     position: fixed;
+  }
+
+  body{
+    max-width: 100%;
   }
 
   .logo-header h1 {
@@ -620,7 +627,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     /* height: 190px; */
-    width: auto;
+    width: 100%;
     flex-wrap: wrap;
     margin: 1rem 0;
     /*padding-left: 11.9%;*/
