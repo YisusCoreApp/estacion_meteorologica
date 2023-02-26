@@ -402,7 +402,8 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: auto;
+    flex-wrap: wrap;
+    width: 100%;
     /* display: flex;
     justify-content: space-between;
     align-items: center;
