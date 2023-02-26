@@ -476,7 +476,7 @@ footer {
 
 /*---------------------------------------------------*/
 /*Estilos para Celular*/
-@media (min-width: 360px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) {
   header {
     display: flex;
     justify-content: space-between;
@@ -622,15 +622,18 @@ footer {
     text-align: center;
   }
 
-  .container {    
+  .container {   
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    /* display: flex;
     justify-content: space-between;
     align-items: center;
-    /* height: 190px; */
     width: 100%;
     flex-wrap: wrap;
-    margin: 1rem 0;
-    /*padding-left: 11.9%;*/
+    margin: 1rem 0; */
   }
 
 .card img{
