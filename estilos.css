@@ -254,7 +254,7 @@ footer {
 }
 
 /*Estilos para el tamaño de display 768px)*/
-@media (min-width: 768px) and (max-width: 1023px) {
+@media(max-width: 1023px) {
   header {
     width: 100%;
   }
@@ -400,15 +400,9 @@ footer {
 
   .container {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100%;
-    /* display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 200px;
-    width: 100%; */
+    width: 100%;
   }
 
   .card {
