@@ -480,10 +480,9 @@ footer {
     width: 97.5%;
     height: 35px;
     font-family: "Ubuntu";
+    position: fixed;
   }
-  .header{
-    /* position: fixed; */
-  }
+
   .logo-header h1 {
     font-size: 18px;
     text-align: center;
@@ -621,7 +620,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     /* height: 190px; */
-    width: 100%;
+    width: auto;
     flex-wrap: wrap;
     margin: 1rem 0;
     /*padding-left: 11.9%;*/
