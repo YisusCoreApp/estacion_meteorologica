@@ -370,7 +370,7 @@ footer {
 }
 
 
-@media (min-width: 360px) {
+@media (min-width: 360px) and (max-width: 767px) {
     header {
         display: flex;
         justify-content: space-between;
@@ -467,7 +467,6 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-wrap: wrap;
         min-width: 80%;
         border: 3px solid #191970;
         border-radius: 40px;
