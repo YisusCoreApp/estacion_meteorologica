@@ -370,7 +370,7 @@ footer {
 }
 
 
-@media (min-width: 320px) {
+@media (min-width: 360px) {
     header {
         display: flex;
         justify-content: space-between;
