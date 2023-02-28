@@ -467,7 +467,7 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        min-width: 80%;
+        min-width: 90%;
         border: 3px solid #191970;
         border-radius: 40px;
         margin: 10px;
@@ -492,7 +492,7 @@ footer {
     .card:hover {
         background: #f1cd57;
         color: #191970;
-        width: 80%;
+        width: 90%;
         border: 3px solid #191970;
         border-radius: 40px;
         margin: 10px;
