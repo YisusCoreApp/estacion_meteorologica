@@ -504,13 +504,13 @@ footer {
         margin-right: auto;
     }
 
-    .container2{
+    /* .container2{
         flex-wrap: wrap;
     }
 
     .container3 {
         flex-wrap: wrap;
-    }
+    } */
 
     footer{
         display: block;
