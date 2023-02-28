@@ -255,8 +255,9 @@ footer {
 
 /*Estilos para el tamaño de display 768px)*/
 @media (min-width: 768px) and (max-width: 1023px) {
+  
   header {
-    width: 100%;
+    width: 98%;
   }
   body{
     max-width: 100%;
@@ -495,25 +496,16 @@ footer {
     color: #fff;
     padding: 2px;
   }
-  .checkbtn {
-    display: flex;
-  }
+
   .logo-header img{
     height: 25px;
     width: 50px;
   }
+
   .logoTec img{
     height: 25px;
     width: 28px;
     padding-right: 2px;
-  }
-
-  .menu-icon {
-    display: flex;
-    align-items: center;
-    width: 5px;
-    height: 5px;
-    padding-right: 22px;
   }
 
   .logoTec ul {
@@ -540,6 +532,18 @@ footer {
     padding: 1rem;
   }
 
+  .checkbtn {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: flex;
+    align-items: center;
+    width: 5px;
+    height: 5px;
+    padding-right: 22px;
+  }
+
   #check:checked ~ ul {
     left: 0;
     transition: all 0.15s;
@@ -557,6 +561,14 @@ footer {
     font-family: "Ubuntu", sans-serif;
   }
 
+  .seccion p {
+    border-radius: 5px;
+    background: #f1cd57;
+    font-size: 15px;
+    padding: 5px 15px 5px 15px;
+    text-align: justify;
+  }
+
   .objetivo {
     padding: 10px;
     border-radius: 50px;
@@ -569,14 +581,6 @@ footer {
     font-weight: 500;
     padding: 10px;
     background: #1b396a;
-  }
-
-  .seccion p {
-    border-radius: 5px;
-    background: #f1cd57;
-    font-size: 15px;
-    padding: 5px 15px 5px 15px;
-    text-align: justify;
   }
 
   .ubicacion {
@@ -607,15 +611,15 @@ footer {
     height: 200px;
   }
   /*estios aside*/
+  .datosAside {
+    font-family: "Ubuntu", sans-serif;
+    text-align: center;
+  }
+
   .datosAside h2 {
     padding-top: 40px;
     color: #1b396a;
     font-size: 18px;
-  }
-
-  .datosAside {
-    font-family: "Ubuntu", sans-serif;
-    text-align: center;
   }
 
   .container {   
@@ -626,13 +630,6 @@ footer {
     flex-wrap: wrap;
     margin: 1rem 0;
   }
-
-.card img{
-  /* display: none; */
-  width: 60px;
-  /* height: 40px; */
-  }
-
 
   .card {
     margin: 2px;
@@ -649,18 +646,22 @@ footer {
     transform: translateY(-3%);
   }
 
-  .card .contenido p {
+  .card img{
+    width: 60px;
+    }
+
+  .card .contenido h3 {
+      padding-top: 0;
+      font-size: medium;
+      text-align: center;
+  }
+  
+    .card .contenido p {
     padding-top: 10px;
     text-align: center;
     font-size: 15px;
   }
-
-  .card .contenido h3 {
-    padding-top: 0;
-    font-size: medium;
-    text-align: center;
-  }
-
+  
   .datosAside a {
     font-family: "Ubuntu", sans-serif;
     display: inline-block;
@@ -685,7 +686,6 @@ footer {
   }
   .footer{
     max-width: 100%;
-    /* height: 450px; */
   }
   .datEsc{
     padding: 50px ;
@@ -696,6 +696,6 @@ footer {
     padding: 0px;
   }
   .dat {
-    padding: 15px 25PX 20PX 20PX;
+    padding: 1rem 2rem;
   } 
 }
