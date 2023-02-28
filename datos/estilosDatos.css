@@ -212,7 +212,7 @@ footer {
 }
 
 /*Estilos para el tamaño de display 760px)*/
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 760px) and (max-width: 1023px) {
     header {
         display: flex;
         justify-content: space-between;
