@@ -264,6 +264,7 @@ footer {
   }
   .header{
     position: fixed;
+    z-index: 2;
   }
   .logo-header {
     display: flex;
@@ -415,6 +416,7 @@ footer {
     background: #1b396a;
     color: #fff;
     transition: all 400ms ease;
+    z-index: 1;
   }
 
   .card:hover {
