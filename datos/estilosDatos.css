@@ -219,6 +219,7 @@ footer {
         width: 98%;
         height: 35px;
         font-family: "Ubuntu";
+        z-index: 2;
       }
       .header{
         position: fixed;
@@ -319,6 +320,7 @@ footer {
         margin: 10px;
         font-family: "Ubuntu";
         font-size: 15px;
+        z-index: 1;
     }
 
     .card:hover {
@@ -377,6 +379,7 @@ footer {
         width: 97.5%;
         height: 35px;
         font-family: "Ubuntu";
+        z-index: 2;
       }
       .header{
         position: fixed;
@@ -442,7 +445,6 @@ footer {
         transition: all 0.15s;
       }
 
-      /*Estilos cartas y reloj*/
       .container-clock{
         padding-top: 65px;
       }
@@ -471,6 +473,7 @@ footer {
         border: 3px solid #191970;
         border-radius: 40px;
         margin: 10px;
+        z-index: 1;
     }
 
     .card img {

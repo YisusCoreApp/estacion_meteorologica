@@ -485,6 +485,7 @@ footer {
     height: 35px;
     font-family: "Ubuntu";
     position: fixed;
+    z-index: 2;
   }
 
   .logo-header h1 {
@@ -644,6 +645,7 @@ footer {
     background: #f1cd57;
     color: #1b396a;
     transform: translateY(-3%);
+    z-index: 1;
   }
 
   .card img{

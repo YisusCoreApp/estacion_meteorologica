@@ -14,7 +14,7 @@ firebase.initializeApp(firebaseConfig);
 const datosMeteorologicos = {
   temperaturaB:{value: "temperaturaBMP", unit: '°C'},
   presion: {value: "presion", unit: 'hPa'},
-  altitud: {value: "altitud", unit: 'm'},
+  altitud: {value: "altitud", unit: 'm.s.n.m.'},
   temperaturaD: {value: "tempdhd22", unit: '°C'},
   humedad: {value: "humedadd", unit: '%'},
   tempAire: {value: "temds18b20", unit: '°C'},
